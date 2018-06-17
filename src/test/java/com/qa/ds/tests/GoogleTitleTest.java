@@ -5,7 +5,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 public class GoogleTitleTest {
 	
-	public static void main(String [] args) {
+	public static void main(String [] args) throws InterruptedException {
 		
 		System.setProperty("webdriver.chrome.driver", "chromedriver.exe");
 		WebDriver driver = new ChromeDriver();
@@ -21,6 +21,10 @@ public class GoogleTitleTest {
 			System.out.println("fail");
 			System.out.println(t);
 		}
+		
+		Thread.sleep(3000);
+		
+		driver.quit();
 	}
 
 }
