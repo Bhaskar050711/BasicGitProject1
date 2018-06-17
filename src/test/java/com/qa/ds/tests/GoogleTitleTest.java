@@ -13,11 +13,13 @@ public class GoogleTitleTest {
 		driver.get("https://www.google.com");
 		
 		String t = driver.getTitle();
-		System.out.println(t);
+// 		System.out.println(t);
 		if (t.equals("Google")) {
 			System.out.println("pass");
+			System.out.println(t);
 		}else {
 			System.out.println("fail");
+			System.out.println(t);
 		}
 	}
 
