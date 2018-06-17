@@ -15,7 +15,7 @@ public class GoogleLogoTest {
 
 		driver.findElement(By.linkText("Gmail")).click();
 
-		Thread.sleep(2000);
+		Thread.sleep(1000);
 
 		driver.quit();
 	}
